@@ -134,7 +134,8 @@ function renderJobs(){
     ? jobs
     : jobs.filter(job=>job.status===currentTab)
 
-  document.getElementById("tabCount").innerText = filtered.length + " Jobs"
+  //document.getElementById("tabCount").innerText = filtered.length + " Jobs"
+    document.getElementById("tabCount").innerText = `${filtered.length} of ${jobs.length} Jobs`
 
   if(filtered.length===0){
     empty.classList.remove("hidden")
