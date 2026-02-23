@@ -9,58 +9,40 @@
 <title>Job Application Tracker</title>
 </head>
 <body class="bg-gray-100">
-
-<div class="max-w-7xl mx-auto p-4">
-
- <!-- ================= DASHBOARD ================= -->
+<div class="max-w-7xl mx-auto p-4"> 
   <h1 class="text-3xl font-bold mb-6 text-blue-900">Job Application Tracker</h1>
-
   <div class="grid md:grid-cols-3 gap-4 mb-10">
       <div class="bg-white p-6 rounded-lg shadow">
-        <p class="text-gray-500">Total</p>
-        <h2 id="totalCount" class="text-3xl font-bold text-blue-900">8</h2>
+          <p class="text-gray-500">Total</p>
+          <h2 id="totalCount" class="text-3xl font-bold text-blue-900">8</h2>
       </div>
-
       <div class="bg-white p-6 rounded-lg shadow">
-        <p class="text-gray-500">Interview</p>
-        <h2 id="interviewCount" class="text-3xl font-bold text-green-600">0</h2>
+          <p class="text-gray-500">Interview</p>
+          <h2 id="interviewCount" class="text-3xl font-bold text-green-600">0</h2>
       </div>
-
       <div class="bg-white p-6 rounded-lg shadow">
-        <p class="text-gray-500">Rejected</p>
-        <h2 id="rejectedCount" class="text-3xl font-bold text-red-500">0</h2>
+          <p class="text-gray-500">Rejected</p>
+          <h2 id="rejectedCount" class="text-3xl font-bold text-red-500">0</h2>
       </div>
-  </div>
-
-    <!-- ================= AVAILABLE JOBS ================= -->
+  </div>    
     <div class="flex justify-between items-center mb-4">
-      <h2 class="text-2xl font-bold">Available Jobs</h2>
-      <span id="tabCount" class="text-gray-600 font-semibold">8 Jobs</span>
-    </div>
-
-    <!-- Tabs -->
+        <h2 class="text-2xl font-bold">Available Jobs</h2>
+        <span id="tabCount" class="text-gray-600 font-semibold">8 Jobs</span>
+    </div>   
     <div class="flex gap-4 mb-6">
         <button onclick="switchTab('all')" id="allTab" class="tabBtn bg-blue-600 text-white px-4 py-2 rounded">All</button>
         <button onclick="switchTab('interview')" id="interviewTab" class="tabBtn bg-gray-200 px-4 py-2 rounded">Interview</button>
         <button onclick="switchTab('rejected')" id="rejectedTab" class="tabBtn bg-gray-200 px-4 py-2 rounded">Rejected</button>
-    </div>
-
-    <!-- Job Container -->
-    <div id="jobContainer" class="grid grid-cols-1 gap-6"></div>
-
-    <!-- Empty State -->
+    </div>    
+    <div id="jobContainer" class="grid grid-cols-1 gap-6"></div>    
     <div id="emptyState" class="hidden text-center mt-10">
         <div class="flex justify-center mb-4">
-          <img src="./jobs.png" alt="No jobs" class="w-24 h-24 object-contain">
+           <img src="./jobs.png" alt="No jobs" class="w-24 h-24 object-contain">
         </div>
         <h3 class="text-xl font-semibold">No jobs available</h3>
         <p class="text-gray-500">Check back soon for new job opportunities</p>
     </div>
-
 </div>
-
-
 <script src="./script.js"></script>
-
 </body>
 </html>
